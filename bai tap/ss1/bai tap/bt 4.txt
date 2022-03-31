@@ -1,0 +1,14 @@
+ BEGIN
+           INPUT a1 a2 a3 … ai
+               Max=a1;
+                I = 1
+	WHILE(I<N)
+              IF(Max>ai)
+               Max=ai;
+                  End if
+               i=i+1;
+              DISPLAY max;
+             END
+
+
+ 

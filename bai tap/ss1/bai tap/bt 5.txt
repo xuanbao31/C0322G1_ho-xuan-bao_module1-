@@ -1,0 +1,13 @@
+Begin
+Input Point 
+If Points >= 75 
+Display " Loai A "
+If 60<= Points < 75
+Display "Loai B " 
+If 45<= Points < 60
+Display " Loai C " 
+If 35<= Points < 45 
+Display " Loai D "
+If Points < 35 
+Display " Loai E" 
+End
