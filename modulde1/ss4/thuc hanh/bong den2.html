@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="turnoff()">OFF</button>
+<img src="img/pic_bulboff.gif" height="180" width="100" id="imgLight">
+<button onclick="turnon()">ON
+</button>
+<script>
+    function turnoff() {
+        document.getElementById('imgLight').src ='img/pic_bulboff.gif';
+    }
+    function turnon() {
+        document.getElementById('imgLight').src ='img/pic_bulbon.gif';
+    }
+
+</script>
+
+    </body>
+    </html>

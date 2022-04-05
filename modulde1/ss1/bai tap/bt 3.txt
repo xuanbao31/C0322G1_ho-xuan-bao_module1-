@@ -1,0 +1,15 @@
+
+
+
+
+Begin 
+Input a b c 
+a=Max
+If a> b AND a> c 
+Display a max 
+End
+Else 
+If b >c
+b max
+else c max 
+ENd 
