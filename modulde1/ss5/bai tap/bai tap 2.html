@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+       <table>
+           <tr>
+               <td>Amount</td>
+               <td style="width:50px;"></td>
+               <td>From Currency</td>
+               <td style="width:50px;"></td>
+               <td>To Currency</td>
+           </tr>
+           <tr>
+               <td><input type="number" id="dauvao"/></td>
+               <td style="width:50px;"></td>
+               <td><select name="" id="select1">
+                   <option value="a">VND </option>
+                   <option value="b">USD</option>
+               </select></td>
+               <td style="width:50px;"></td>
+               <td><select name="" id="select2">
+                   <option value="a">VND</option>
+                   <option value="b">USD</option>
+               </select></td>
+               <td>
+                   <button onclick="getValue()">Convert</button>
+           </tr>
+       </table>
+       <p> result:<span id="result"></span></p>
+<script>
+  function getValue() {
+      let giatrivao = document.getElementById('dauvao').value;
+      let select1 = document.getElementById('select1').value;
+      let select2 = document.getElementById('select2').value;
+
+      if (select1 == select2) {
+          document.getElementById('result').innerHTML = giatrivao;
+      }
+      if (select1 == "a" && select2 == "b") {
+          document.getElementById('result').innerHTML = giatrivao/23000;
+      }
+      if (select1 == "b" && select2 == "a") {
+          document.getElementById('result').innerHTML = giatrivao*23000;
+      }
+  }
+</script>
+
 </body>
 </html>
