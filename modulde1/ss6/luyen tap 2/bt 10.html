@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let electric = parseInt(prompt("kWh dien xai trong 1 thang"));
+    if (electric <70) {
+        let result = electric * 1500;
+        alert(result);
+    } else if (electric < 100){
+        let result= electric * 1700;
+        alert(result);
+    } else if (electric < 300){
+        let result= electric * 2100;
+        alert(result);
+    } else if (electric < 500){
+        let result = electric * 2500;
+        alert(result);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= parseInt(prompt("nhập điểm kiểm tra 1 tiết"))
+    let b= parseInt(prompt("nhập điểm thi giữa kì"))
+    let c= parseInt(prompt("nhập điểm thi cuối kì "))
+    let t = a+b+c
+    let avarage= t/3
+    if (avarage>=8 && avarage<10){
+        alert("Học sinh Giỏi");
+        if (avarage>=6.5 && avarage<8){
+            alert("Học sinh Khá");
+        }
+    } else {
+        alert("học Sinh TB");
+    }
+</script>
+</body>
+</html>

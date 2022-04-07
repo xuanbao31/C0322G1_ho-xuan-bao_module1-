@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="number" id="dau vao"> Nhập số</td>
+
+        <td></td>
+        <td style="width:300px">
+            <select id="select1">
+                <option value="met" >m</option>
+                <option value="feet">F</option>
+            </select>
+        </td>
+        <td>
+            <select id="select2">
+                <option value="met">m</option>
+                <option value="feet">F</option>
+            </select>
+        <td>
+        <td>
+            <button onclick="getValue()">Convert</button>
+        </td>
+    </tr>
+
+</table>
+<p> result:<span id="result"></span></p>
+<script>
+    function getValue(){
+        let giatrivao = document.getElementById('dau vao').value;
+        let select1 = document.getElementById('select1').value;
+        let select2 = document.getElementById('select2').value;
+        if (select1==select2){
+            document.getElementById('result').innerHTML=giatrivao;
+        }
+        if (select1 =="m" && select2=="feet"){
+            document.getElementById('result').innerHTML=giatrivao * 3.2808;
+        }
+        if (select1=="feet" && select2=="met"){
+            document.getElementById('result').innerHTML=giatrivao / 3.2808;
+        }
+
+    }
+</script>
+</body>
+</html>
