@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>may tinh simple</title>
+</head>
+<body>
+<div id="Container"></div>
+<table style="border: 8px solid black ">
+    <tr align="center">
+        <td colspan="4">
+            <input id ="ket qua" placeholder="hien thi ket qua"  ></input> <br>
+        </td>
+    </tr>
+<tr>
+    <td><input type="button" value="1" onclick="set_num(1)"/></td>
+    <td><input type="button" value="2" onclick="set_num(2)"/></td>
+    <td><input type="button" value="3" onclick="set_num(3)"/></td>
+    <td><input type="button" value="+" onclick="set_num('+')"/></td>
+</tr>
+    <tr>
+        <td><input type="button" value="4" onclick="set_num(4)"/></td>
+        <td><input type="button" value="5" onclick="set_num(5)"/></td>
+        <td><input type="button" value="6" onclick="set_num(6)"/></td>
+        <td><input type="button" value="-" onclick="set_num('-')"/></td>
+    </tr><tr>
+    <td><input type="button" value="7" onclick="set_num(7)"/></td>
+    <td><input type="button" value="8" onclick="set_num(8)"/></td>
+    <td><input type="button" value="9" onclick="set_num(9)"/></td>
+    <td><input type="button" value="*" onclick="set_num('*')"/></td>
+</tr><tr>
+    <td><input type="button" value="C" onclick="xoa()"/></td>
+    <td><input type="button" value="0" onclick="set_num(0)"/></td>
+    <td><input type="button" value="=" onclick="xuatra()"/></td>
+    <td><input type="button" value="/" onclick="set_num('/')"/></td>
+</tr>
+    <script>
+        function set_num(num){
+            document.getElementById('ket qua').value=document.getElementById('ket qua').value+num;
+
+        }
+        // let x='';
+        // function a(id) {
+        //     return document.getElementById(id);
+        // }
+        // function set_num(num){
+        //     x+=num;
+        //     a('ket qua').value=x;
+        // }
+        // function xoa(){
+        //     x='';
+        //     a('ket qua').value=x;
+        // }
+        function xuatra (){
+            //
+            // a('ketqua').value=""+ eval(a('ketqua').value);
+            let kQua = document.getElementById('ket qua').value;
+            document.getElementById('ket qua').value=eval(kQua);
+
+        }
+        function xoa(){
+            document.getElementById('ket qua').value='';
+        }
+    </script>
+
+</table>
+
+
+</body>
+</html>

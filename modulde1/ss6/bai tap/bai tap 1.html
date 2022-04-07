@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉ số BMI</title>
+</head>
+<body>
+
+    <script>
+        function bmi() {
+            let weigh= parseFloat(document.getElementById("inputweight")).value;
+            let height= parseFloat(document.getElementById("inputheight")).value;
+            let bmi = weightt/ ( height * height)
+            if (bmi<18.50)
+                document.write("Underweight");
+           else if (bmi<25.0)
+                document.write("normal");
+            else if (bmi<30.)0
+               document.write("Overweight");
+            else
+                document.write("obese");
+
+       }
+
+    </script>
+</body>
+</html>
