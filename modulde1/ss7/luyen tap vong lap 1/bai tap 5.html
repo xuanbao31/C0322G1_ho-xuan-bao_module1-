@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("nhap so "))
+    let a = 0 ;
+    let b = 1 ;
+    let count=null
+    let tong = 0
+    for(let i = 1; i<=number; i++){
+        document.write(a+ "<br> ")
+        tong = tong + a
+        count= a + b
+        a=b
+        b=count
+    }
+    document.write("tong la "+ tong)
+
+
+
+</script>
+
+
+
+</body>
+</html>

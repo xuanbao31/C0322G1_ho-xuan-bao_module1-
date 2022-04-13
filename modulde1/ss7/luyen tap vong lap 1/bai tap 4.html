@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let t = parseInt(prompt('nhap so muon chia'));
+    let a = 0;
+    let b = 1;
+    let count = null;
+    for (let i = 1; i <= 20; i++) {
+        document.write(a + "<br> ");
+        count = a + b;
+        a = b;
+        b = count;
+        if (count % t === 0) {
+            document.write(count+'la so chia het cho' + t)
+            break;
+        }
+
+    }
+
+
+</script>
+
+
+</body>
+</html>
