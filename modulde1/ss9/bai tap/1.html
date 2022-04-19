@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function isPrime(number) {
+      if (number < 2) {
+          return false;
+      }
+
+      for (i = 2; i < number; i++) {
+          if (number % i == 0) {
+              return false;
+          }
+          return true;
+      }
+  }
+      let num = parseInt(prompt('nhap so vao'))
+      let kiemtra= isPrime(num);
+      if (kiemtra){
+          alert(num + 'la so nguyen to');
+      } else{
+          alert(num + 'khong phai la so nguyen to ');
+      }
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button type="button" onclick=" footToMeter(f)" style="width: 70px ">f->m</button>
+<button type="button" onclick="meterToFoot(f) " style="width: 70px" >m->f</button>
+
+<script>
+    let f = parseFloat(prompt('nhap so'))
+
+    function footToMeter(foot) {
+        let m = 3.279 * foot
+        document.write("feet sang meters :" + m)
+    }
+
+
+    function meterToFoot(meter) {
+        let f = 0.305 * meter
+        document.write('meters sang feet:' + f);
+    }
+
+</script>
+
+</body>
+</html>

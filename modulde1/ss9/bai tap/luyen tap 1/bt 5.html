@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timkiem(x) {
+        let star =['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' , 'Regulus', 'bao']
+        let constellation=['UrsaMinor','Tarurus','Cygnus','Lyra','Aquila','UrsaMajor','Leo','chòm sao sáng nhất ' ]
+        for (i=0;i<star.length ;i++){
+            if (star[i]===x){
+                return constellation[i]
+            } else if (constellation[i]===x){
+                return star[i]
+
+        // for (i=0; i<constellation.length;i++){
+        //     if (constellation[i]===x){
+        //         return star[i]
+            }
+        }
+        return 0
+
+    }
+    let search = prompt('nhap star muon kim ')
+    let tim = timkiem(search);
+    if (tim) {
+        document.write(tim);
+    } else {
+        document.write('khong thay ngoi sao nay');
+    }
+
+
+
+
+    
+    
+</script>
+
+</body>
+</html>

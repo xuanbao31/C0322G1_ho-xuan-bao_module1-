@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function small(a, b, c) {
+        let min = a;
+        if (min > b) {
+            min = b;
+        } else if (min > c) {
+            min = c;
+        }else if (b>c && b<min){
+            b=c=min
+        }
+        return min
+    }
+
+    let x = prompt("Input x")
+    let y = prompt("Input y")
+    let z = prompt("Input z")
+    let m = small(x, y, z)
+    document.write("Giá trị nhỏ nhất là "+ m)
+
+
+</script>
+
+</body>
+</html>
