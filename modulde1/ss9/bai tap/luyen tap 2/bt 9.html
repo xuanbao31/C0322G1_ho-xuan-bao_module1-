@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let b = ["a", "v", "d", "a", "l", "a", "s", "d", "a", "v", "s"]
+    let c = prompt('nhap ki tu')
+    function hello() {
+        let count = 0
+        let flag = false
+        for (i = 0; i < b.length; i++) {
+            if (b[i] === c) {
+                flag = true
+                count++
+            }
+        }
+        if (flag===false){
+            document.write('-1'+'<br>')
+        }
+        return count
+    }
+
+    let x = hello(b);
+    document.write("ki tu "+ c +" xuat hien " +x+" lan ");
+
+
+</script>
+
+</body>
+</html>
