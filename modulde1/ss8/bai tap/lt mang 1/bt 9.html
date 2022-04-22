@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let mang1 = []
+    let mang2 =[]
+    let mang3 =[]
+    for ( i=0; i < 5 ; i++){
+        let a= parseInt(prompt('nhap so vao'))
+        mang1.push(a)
+    }
+    for (i=0; i <5 ; i++){
+        let b = parseInt(prompt('nhap so vao'))
+        mang2.push(b)
+    }
+    for (i=0;i<mang2.length;i++){
+        mang3.push(mang1[i]);
+    }
+    for (i=0;i<mang1.length;i++){
+        mang3.push(mang2[i]);
+    }
+    document.write(mang3)
+
+
+
+
+</script>
+
 </body>
 </html>

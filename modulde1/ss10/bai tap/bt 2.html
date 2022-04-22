@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(C) {
+            this.C = C
+        }
+
+        temperatureF() {
+            return this.C * 1.8 + 32
+        }
+        temperatureKevin(){
+            return this.C + 273.15
+        }
+
+    }
+    let input;
+    do {
+        input=parseFloat(prompt('nhap do C'))
+        if (input<=-273){
+            alert('tang nhiet do')
+        }else
+            input=input
+        break;
+    }while(true);
+    let temperature= new Temperature(input)
+    document.write('do C sang do F: '+temperature.temperatureF() + '<br>' )
+    document.write('do C sang do Kevin: '+ temperature.temperatureKevin())
+
+
+</script>
+</body>
+</html>

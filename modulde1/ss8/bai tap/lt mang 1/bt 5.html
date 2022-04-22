@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+let x = [];
+let a = [];
+for (let i = 0 ; i <7 ; i++){
+    x[i]= parseInt(prompt('Input your Number'));
+}
+document.write(x + "<br>");
+for (let i = 0 ; i< x.length ; i++){
+    if (x[i]<0){
+        a.push(x[i]);
+
+    }
+}
+document.write('so nguyen am: '+ a);
+document.write('so nguyen am : '+ a.length);
+</script>
+
 </body>
 </html>

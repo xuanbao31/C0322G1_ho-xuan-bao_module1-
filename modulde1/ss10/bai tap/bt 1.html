@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+class Rectangle{
+    constructor( dai, rong) {
+        this.dai = dai;
+        this.rong = rong;
+
+    }
+    acreage (){
+        return this.dai * this.rong
+    }
+
+    perimeter(){
+        return (this.dai+this.rong)*2
+    }
+}
+let rectangle= new Rectangle(6,8)
+    document.write('dien tich hinh chu nhat la : '+ rectangle.acreage() + '<br>')
+    document.write('chu vi hinh chu nhat la : '+ rectangle.perimeter() )
+
+</script>
+</body>
+</html>

@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = [2,3,4,5,6,7,8,9,10,12];
+    let v = parseInt(prompt('nhap so'));
+     let flag =false
+    for (i=0;i<a.length;i++){
+        if (a[i]===v){
+            flag=true
+        }
+    }
+    document.write(a)
+    if (flag===true){
+        document.write('v is in the array')
+    } else  {
+        document.write('v is not in the array')
+    }
+
+
+</script>
+
 </body>
 </html>
